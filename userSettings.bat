@@ -41,32 +41,7 @@ IF "%GIT_PATH%"=="" (
 )
 set MY_PATH=%MY_PATH%;%GIT_PATH%
 
-rem ============================================================================
-rem doxygen settings
-rem ============================================================================
-IF "%DOXYGEN_PATH%"=="" (
-  ECHO DOXYGEN_PATH is NOT defined - check your mySettings.bat!
-  rem Just optional tool, a missing path should not cause terminating the build process
-  rem GOTO End
-)
-set MY_PATH=%MY_PATH%;%DOXYGEN_PATH%
 
-rem ============================================================================
-rem Typesetting tools settings
-rem ============================================================================
-IF "%GHOSTSCRIPT_PATH%"=="" (
-  ECHO GHOSTSCRIPT_PATH is NOT defined - check your mySettings.bat!
-  rem Just optional tool, a missing path should not cause terminating the build process
-  rem GOTO End
-)
-set MY_PATH=%MY_PATH%;%GHOSTSCRIPT_PATH%
-
-IF "%GRAPHVIZ_PATH%"=="" (
-  ECHO GRAPHVIZ_PATH is NOT defined - check your mySettings.bat!
-  rem Just optional tool, a missing path should not cause terminating the build process
-  rem GOTO End
-)
-set MY_PATH=%MY_PATH%;%GRAPHVIZ_PATH%
 
 
 rem ============================================================================
